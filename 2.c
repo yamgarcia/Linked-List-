@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <assert.h>
 
 struct Node
 {
@@ -73,11 +74,11 @@ int main()
     printList(head);
     if (isCircular(head))
     {
-        printf("the linked list is circular.");
+        printf("The linked list is circular.");
     }
     else
     {
-        printf("the linked list is NOT circular.");
+        printf("The linked list is NOT circular.");
     };
 
     return EXIT_SUCCESS;
